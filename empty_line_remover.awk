@@ -1,11 +1,7 @@
 #!/usr/bin/awk -f
 
-# Removes empty lines from files
-# Eg. 1. Prints additional info about the process. 
-# awk -f empty_line_remover.awk -v verbose=true textFile.txt
-
-# Eg. 2. Saves the output to a file.
-# awk -f empty_line_remover.awk -v path="/path/to/save/result" textFile.txt
+# This AWK script removes empty lines from files.
+# Usage: awk -f empty_line_remover.awk [-v verbose="true"] [-v path="/path/to/save/result"] textFile.txt
 
 BEGIN {
   output = "";
