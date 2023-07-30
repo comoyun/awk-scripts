@@ -4,7 +4,7 @@ BEGIN {
 }
 
 {
-    if($column ~ /[0-9]/) {
+    if($column + 0 == $column) {
 	# sum -= $column;
         # sum *= $column;
 	sum += $column;
