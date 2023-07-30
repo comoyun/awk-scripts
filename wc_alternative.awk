@@ -7,9 +7,7 @@ BEGIN {
 {
     cn += length($0) + 1;
 
-    for(i = 0; i < NF; ++i) {
-	++wn;
-    }
+    wn += NF;
 
     ++ln;
 }
